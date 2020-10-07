@@ -11,7 +11,7 @@ class Triangle
   def kind 
     if 0 > @one || 0 > @two || 0 > @three 
       raise TriangleError
-    elsif @one == @two && @three 
+    elsif @one == @two && @one == @three 
       :equilateral 
     elsif @one == @two || @one == @three || @two == @three 
       :isosceles
