@@ -13,14 +13,14 @@ class Triangle
       raise TriangleError
     elsif @one == @two && @three 
       :equilateral 
-    elsif @one == @two || @three ||
-      
+    elsif @one == @two || @one == @three || @two == @three 
+      :isosceles
     elsif 
-      
+      :scalene
     end 
   end 
   
   class TriangleError < StandardError 
-    
   end
+  
 end
