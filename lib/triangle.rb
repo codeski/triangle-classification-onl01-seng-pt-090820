@@ -11,7 +11,7 @@ class Triangle
   def kind 
     if 0 >= @one || 0 >= @two || 0 >= @three 
       raise TriangleError
-    elsif @one + @two < @three || @one + @three < @two || @two + @three < @one 
+    elsif @one + @two =< @three || @one + @three =< @two || @two + @three =< @one 
       raise TriangleError
     elsif @one == @two && @one == @three 
       :equilateral 
