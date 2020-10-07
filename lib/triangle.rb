@@ -11,6 +11,8 @@ class Triangle
   def kind 
     if 0 > @one || @two || @three 
       raise TriangleError
+    else 
+      @one == @two || @one == @three
     end 
   end 
   
